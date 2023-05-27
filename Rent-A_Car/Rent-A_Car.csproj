@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F55B7E16-C257-448B-8402-4818FF16E45A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rent_A_Car</RootNamespace>
+    <AssemblyName>Rent-A_Car</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cArac_Kiralama.cs" />
+    <Compile Include="frmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaSayfa.Designer.cs">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracKayıt.Designer.cs">
+      <DependentUpon>frmAracKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracListeleme.Designer.cs">
+      <DependentUpon>frmAracListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMüsteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMüsteriEkle.Designer.cs">
+      <DependentUpon>frmMüsteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMüsteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMüsteriListele.Designer.cs">
+      <DependentUpon>frmMüsteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatis.Designer.cs">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSözlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSözlesme.Designer.cs">
+      <DependentUpon>frmSözlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Rent_A_CarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Rent_A_CarDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAnaSayfa.resx">
+      <DependentUpon>frmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracKayıt.resx">
+      <DependentUpon>frmAracKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracListeleme.resx">
+      <DependentUpon>frmAracListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMüsteriEkle.resx">
+      <DependentUpon>frmMüsteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMüsteriListele.resx">
+      <DependentUpon>frmMüsteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatis.resx">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSözlesme.resx">
+      <DependentUpon>frmSözlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Rent_A_CarDataSet.xsc">
+      <DependentUpon>_Rent_A_CarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Rent_A_CarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Rent_A_CarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Rent_A_CarDataSet.xss">
+      <DependentUpon>_Rent_A_CarDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\araba1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkıs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteriListele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AracListele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aracKayıt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sözlesme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Satıslar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkıs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
